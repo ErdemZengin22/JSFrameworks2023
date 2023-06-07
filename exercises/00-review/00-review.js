@@ -34,7 +34,7 @@ const greet = (name) => {
  **/
 
 const highestNumber = (array) => {
-  // Write your answer here
+  return Math.max(...array);
 };
 
 /**
@@ -47,7 +47,7 @@ const highestNumber = (array) => {
  **/
 
 const combineArray = (array1, array2) => {
-  // Write your answer here
+  return [...array1, ...array2];
 };
 
 /**
@@ -58,7 +58,7 @@ const combineArray = (array1, array2) => {
  */
 
 const combineObject = (obj1, obj2) => {
-  // Write your answer here
+  return {...obj1, ...obj2};
 };
 
 /**
@@ -69,7 +69,7 @@ const combineObject = (obj1, obj2) => {
  */
 
 const doubleValues = (arr) => {
-  // Write your answer here
+  return arr.map((value) => value * 2);
 };
 
 /**
@@ -82,7 +82,7 @@ const doubleValues = (arr) => {
  *   onlyEvenValues([5,1,2,3,10]) // [2,10]
  */
 const onlyEvenValues = (arr) => {
-  // Write your answer here
+  return arr.filter((value) => value % 2 === 0);
 };
 
 /**
@@ -104,7 +104,9 @@ const onlyEvenValues = (arr) => {
  *  removeVowels('ZZZZZZ') // ('zzzzzz')
  */
 const removeVowels = (str) => {
-  // Write your answer here
+  const lowerCase = str.toLocaleLowerCase();
+  const noVowels = lowerCase.replace(/[aeiou]/g, '');
+  return noVowels;
 };
 
 /**
@@ -124,6 +126,7 @@ const getIsHungryText = () => {
   // } else {
   //   isHungry = "Keep coding!";
   // }
+  let isHungry = isStomachEmpty ? "Go eat something." : "Keep coding!";
 
   return isHungry;
 };
@@ -142,8 +145,7 @@ const getTempOfTomorrow = () => {
   };
 
   // Start of what you should change
-  const today = AVG_TEMPERATURES.today;
-  const tomorrow = AVG_TEMPERATURES.tomorrow;
+  const { today, tomorrow } = AVG_TEMPERATURES;
   // End of what you should change
   return `Today's temperature is ${today}.\nTomorrow's temperature is ${tomorrow}`;
 };
@@ -175,8 +177,7 @@ const addItems = (arr) => {
  */
 
 const removeDuplicates = (array) => {
-  // Write your answer here
-  // Return an array of unique values
+  return [...new Set(array)];
 };
 
 /**
