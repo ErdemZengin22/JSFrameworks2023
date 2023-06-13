@@ -49,7 +49,7 @@ Import and your render you `<Welcome />` component in `<App />` like this:
 
 Create a component called `<Heading />`. This component should render any children props to the screen.
 
-Import and your render you `<Welcome />` component in `<App />` like this:
+Import and your render you `<Heading />` component in `<App />` like this:
 
 ```jsx
 <Heading>Welcome to my React App!</Heading>
