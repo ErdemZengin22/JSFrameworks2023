@@ -27,15 +27,6 @@ To stop the tests, press `ctrl+c`.
 
 ## Assignment 1
 
-The component should accept a prop "name", which accepts a string.
-If "name" is provided, the component should render "Hello **\_\_\_\_\_**"
-
-If "name" is not provided to the component, the component should render "Hello user."
-
-To achieve this, please use default props.
-
-## Assignment 1
-
 Create a component called `<Welcome />`. It should receive the prop "name". If "name" is provided, you will render "Hello **\_\_\_\_\_**". If the name is not provided, you will fallback to "Hello user".
 
 Import and your render you `<Welcome />` component in `<App />` like this:
@@ -44,6 +35,8 @@ Import and your render you `<Welcome />` component in `<App />` like this:
 <Welcome name="Jamal" />
 <Welcome />
 ```
+
+![](demo.png)
 
 ### Acceptance Criteria
 
@@ -66,7 +59,3 @@ Import and your render you `<Welcome />` component in `<App />` like this:
 
 - I should create a component called `<Heading />` that renders children props to the screen.
 - The `<App />` component should use the `<Heading />` component to render the text "Welcome to my React App!" to the screen.
-
-### Example
-
-![](demo.png)
