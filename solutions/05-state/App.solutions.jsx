@@ -1,5 +1,7 @@
 import "./App.css";
 import LessText from "./components/LessText/LessText";
+import CharacterCount from "./components/CharacterCount/CharacterCount";
+import GuessTheNumber from "./components/GuessTheNumber/GuessTheNumber";
 
 function App() {
   return (
@@ -11,7 +13,13 @@ function App() {
           maxLength={100}
         />
       </div>
-      {/* To reveal solutions for other exercises later */}
+      <div className="bg-secondary text-white pt-4 pb-4 mb-4">
+        <div className="container">
+          <h1 className="h3">Challenge 2 - Character Count</h1>
+          <CharacterCount />
+        </div>
+      </div>
+      {/* This answer will be revealed at a later date */}
     </>
   );
 }
