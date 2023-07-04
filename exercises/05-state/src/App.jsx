@@ -1,4 +1,5 @@
 import "./App.css";
+import GuessTheNumber from './components/GuessTheNumber/GuessTheNumber';
 // Import LessText here
 
 // Import CharacterCount here
@@ -20,7 +21,7 @@ function App() {
       </div>
       <div className="container">
         <h1 className="h3">Challenge 3 - Guessing The Number</h1>
-        {/* Add GuessingTheNumber here */}
+        <GuessTheNumber />
       </div>
     </>
   );
